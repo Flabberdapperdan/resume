@@ -1,0 +1,45 @@
+#resume-container {
+  display: flex;
+  align-items: baseline;
+  border: solid 2px black;
+}
+
+#personal-badge {
+  display: flex;
+  margin: 20px;
+
+  border: solid 1px black;
+  border-radius: 150px 20px 20px 150px;
+}
+
+#personal-badge > * {
+  margin: 5px;
+}
+
+#personal-badge > img {
+  max-height: 300px;
+  border-radius: 150px;
+
+  border: solid 1px black;
+}
+
+#personal-badge > button {
+  font-size: 30px;
+  background-color: inherit;
+  border: none;
+}
+
+#personal-badge-expand {
+}
+
+#short-bio {
+  display: flex;
+}
+
+#short-bio:first-child {
+  margin: 10px;
+}
+
+#contact-info-container {
+  margin: 10px;
+}
