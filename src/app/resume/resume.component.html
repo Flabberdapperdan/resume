@@ -1,32 +1,34 @@
 <div id="resume-container">
-  <div id="personal-badge">
-    <img src="../../assets/images/matthijs.jpeg" alt="matthijs" />
-    <div *ngIf="showPersonal" id="personal-badge-expand">
-      <div id="short-bio">
-        <p>
-          IK BEN EEN POSITIEF en ruimdenkend persoon. Omdat ik banen heb gehad
-          in uiteenlopende branches – cultuursector, horeca, zorg,
-          journalistiek, facilitair - heb ik ervaring met veel verschillende
-          manieren van werken.
-        </p>
-        <p>
-          VERDER BEN IK ANALYTISCH STERK. Mede door mijn universitaire
-          achtergrond ben ik in staat om zowel de details als het grotere geheel
-          te zien. Ik wil graag weten hoe dingen in elkaar ste- ken en haal
-          plezier uit het ontleden en begrijpen van de wereld om me heen.
-        </p>
-      </div>
-      <div id="contact-info-container">
-        <p>
-          SNIJDERMATTHIJS@GMAIL.COM 06-17487841 VAN IDDEKINGEWEG 69, 9721CB,
-          GRONINGEN
-        </p>
+  <div id="resume">
+    <div id="personal-badge-container">
+      <div id="personal-badge">
+        <!-- [style.border-radius]="showPersonal ? '150px 25px 25px 150px' : ''" -->
+        <!-- [style.width]="showPersonal ? '300' : 'auto'" -->
+        <div id="image-container">
+          <img src="../../assets/images/matthijs.jpeg" alt="matthijs" />
+        </div>
+        <div id="personal-badge-expand">
+          <div id="short-bio">
+            <p>
+              IK BEN EEN POSITIEF en ruimdenkend persoon. Omdat ik banen heb
+              gehad in uiteenlopende branches – cultuursector, horeca, zorg,
+              journalistiek, facilitair – heb ik ervaring met veel verschillende
+              manieren van werken. Verder ben ik analytisch sterk. Mede door
+              mijn universitaire achtergrond ben ik in staat om zowel de details
+              als het grotere geheel te zien. Ik wil graag weten hoe dingen in
+              elkaar ste- ken en haal plezier uit het ontleden en begrijpen van
+              de wereld om me heen.
+            </p>
+          </div>
+          <div id="contact-info-container">
+            <p>
+              SNIJDERMATTHIJS@GMAIL.COM 06-17487841 VAN IDDEKINGEWEG 69, 9721CB,
+              GRONINGEN
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <button (click)="togglePersonalBadge()">
-      <span class="material-symbols-outlined">chevron_right</span>
-    </button>
+    <br />
   </div>
-
-  <br />
 </div>

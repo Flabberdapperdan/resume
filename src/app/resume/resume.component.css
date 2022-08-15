@@ -1,45 +1,71 @@
 #resume-container {
   display: flex;
-  align-items: baseline;
-  border: solid 2px black;
+  flex-direction: column;
+  align-items: center;
 }
 
-#personal-badge {
-  display: flex;
-  margin: 20px;
-
+#resume {
+  width: 90%;
   border: solid 1px black;
-  border-radius: 150px 20px 20px 150px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px gray;
+}
+
+/* BADGE */
+#personal-badge-container {
+  display: flex;
+}
+
+/* YOU WERE WORKING ON THIS ELEMENT */
+#personal-badge {
+  height: 292px;
+  display: flex;
+  padding-left: 5px;
+  margin: 20px;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 200px;
+  background-color: rgb(231, 227, 215);
+
+  transition: width 3s;
 }
 
 #personal-badge > * {
   margin: 5px;
 }
 
-#personal-badge > img {
-  max-height: 300px;
-  border-radius: 150px;
+#image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 271px;
+  width: 271px;
+  flex-shrink: 0;
+  border-radius: 136px;
+  background-color: white;
+}
 
+#image-container > img {
+  height: 250px;
+  width: 250px;
+  margin: 0;
+  border-radius: 150px;
   border: solid 1px black;
 }
 
-#personal-badge > button {
+#personal-badge-expand {
+  transition: width 3s;
+}
+
+#toggle-personal {
   font-size: 30px;
   background-color: inherit;
   border: none;
-}
-
-#personal-badge-expand {
+  transition: transform 0.3s ease-out;
 }
 
 #short-bio {
-  display: flex;
+  border-radius: 146px;
 }
 
-#short-bio:first-child {
-  margin: 10px;
-}
-
-#contact-info-container {
-  margin: 10px;
-}
+/* REST */
