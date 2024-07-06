@@ -18,14 +18,15 @@
 .main-nav.row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 50%;
   width: 100%;
 }
 
 .experience, .education {
-  height: 30%;
-  width: 30%;
-  margin: 5%;
+  height: 90%;
+  width: 40%;
+  //margin: 2.5%;
 
   background-color: pink;
 }
